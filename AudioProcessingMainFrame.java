@@ -64,7 +64,7 @@ public class MainFrame extends JFrame {
 					
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[OPEN]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[OPEN]"+"\r\n");
 					
 					
 				}
@@ -82,7 +82,7 @@ public class MainFrame extends JFrame {
 					
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[PLAY]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[PLAY]"+"\r\n");
 				}
 			}
 		});
@@ -90,14 +90,14 @@ public class MainFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 				JFileChooser fc = new JFileChooser();
 				if(JFileChooser.APPROVE_OPTION==fc.showSaveDialog(btnSave)){
 					String filepath = fc.getSelectedFile().getAbsolutePath();
 					proced.write(filepath);
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[SAVE]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[SAVE]"+"\r\n");
 				}
 				
 			}
@@ -120,7 +120,7 @@ public class MainFrame extends JFrame {
 				
 				SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				String timefornow = date.format(new Date());
-				procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[OLA PROCESSING]"+"\r\n");
+				procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[OLA PROCESSING]"+"\r\n");
 			}
 		});
 		btnPlay2.addActionListener(new ActionListener() {
@@ -132,7 +132,7 @@ public class MainFrame extends JFrame {
 					proced.play();
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[PLAY]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[PLAY]"+"\r\n");
 				
 				}
 			}
@@ -142,7 +142,7 @@ public class MainFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 				String v = tfPara2.getText();
 				float p;
 				try{
@@ -153,7 +153,7 @@ public class MainFrame extends JFrame {
 				resampled = new Cls12(opened.resample(p),opened.getChannel(),opened.getBitDepth(),opened.getSampleRate());
 				SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				String timefornow = date.format(new Date());
-				procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[RESAMPLE PROCESSING]"+"\r\n");
+				procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[RESAMPLE PROCESSING]"+"\r\n");
 			}
 		});
         btnPlay3.addActionListener(new ActionListener() {
@@ -165,7 +165,7 @@ public class MainFrame extends JFrame {
 					resampled.play();
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[PLAY]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[PLAY]"+"\r\n");
 				}
 			}
 		});
@@ -174,14 +174,14 @@ public class MainFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 				JFileChooser fc = new JFileChooser();
 				if(JFileChooser.APPROVE_OPTION==fc.showSaveDialog(btnSave)){
 					String filepath = fc.getSelectedFile().getAbsolutePath();
 					resampled.write(filepath);
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[SAVE]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[SAVE]"+"\r\n");
 				}
 				
 			}
@@ -192,7 +192,7 @@ public class MainFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 				String v1 = tfPara3.getText();
 				String v2 = tfPara4.getText();
 				//Pattern pattern0 = Pattern.compile("[;|]+");
@@ -226,7 +226,7 @@ public class MainFrame extends JFrame {
 				
 				SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				String timefornow = date.format(new Date());
-				procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[FILTER]"+"\r\n");
+				procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[FILTER]"+"\r\n");
 			}
 		});
         btnPlay4.addActionListener(new ActionListener() {
@@ -238,7 +238,7 @@ public class MainFrame extends JFrame {
 					filtered.play();
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[PLAY]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[PLAY]"+"\r\n");
 				}
 			}
 		});
@@ -247,14 +247,14 @@ public class MainFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 				JFileChooser fc = new JFileChooser();
 				if(JFileChooser.APPROVE_OPTION==fc.showSaveDialog(btnSave)){
 					String filepath = fc.getSelectedFile().getAbsolutePath();
 					filtered.write(filepath);
 					SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					String timefornow = date.format(new Date());
-					procdiary.append("¡¾"+timefornow+"¡¿"+"     "+"[SAVE]"+"\r\n");
+					procdiary.append("ã€"+timefornow+"ã€‘"+"     "+"[SAVE]"+"\r\n");
 				}
 				
 			}
@@ -285,10 +285,10 @@ public class MainFrame extends JFrame {
 	}
 
 	private JPanel creatFifthPanel() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		procdiary = new JTextArea();
 		procdiary.setPreferredSize(new Dimension(800,600));
-		procdiary.setLineWrap(true);//×Ô¶¯»»ĞĞ
+		procdiary.setLineWrap(true);//è‡ªåŠ¨æ¢è¡Œ
 		procdiary.setWrapStyleWord(true);
 	    JScrollPane JSP = new JScrollPane(procdiary);
 	    JSP.setPreferredSize(new Dimension(800,200));
@@ -304,7 +304,7 @@ public class MainFrame extends JFrame {
 	}
 
 	private JPanel creatForthPanel() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		btnFilter = new JButton();
 		btnFilter.setText("Filter");
 		btnFilter.setPreferredSize(new Dimension(200,30));
@@ -320,7 +320,7 @@ public class MainFrame extends JFrame {
 		tfPara4.setPreferredSize(new Dimension(50,30));
 		
 		lblTips3 = new JLabel();
-		lblTips3.setText("ÊäÈëÂË²¨Æ÷ÏµÊıaºÍb£¬ÓÃ¶ººÅÏà¸ô");
+		lblTips3.setText("è¾“å…¥æ»¤æ³¢å™¨ç³»æ•°aå’Œbï¼Œç”¨é€—å·ç›¸éš”");
 		
 		btnSave3 = new JButton();
 		btnSave3.setText("Save");
@@ -340,7 +340,7 @@ public class MainFrame extends JFrame {
 	}
 
 	private JPanel creatThirdPanel() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		btnResample = new JButton();
 		btnResample.setText("Resample Processing");
 		btnResample.setPreferredSize(new Dimension(200,30));
@@ -353,7 +353,7 @@ public class MainFrame extends JFrame {
 		tfPara2.setPreferredSize(new Dimension(100,30));
 		
 		lblTips2 = new JLabel();
-		lblTips2.setText("ÊäÈë²ÎÊırate");
+		lblTips2.setText("è¾“å…¥å‚æ•°rate");
 		
 		btnSave2 = new JButton();
 		btnSave2.setText("Save");
@@ -384,7 +384,7 @@ public class MainFrame extends JFrame {
 		tfPara.setPreferredSize(new Dimension(100,30));
 		
 		lblTips = new JLabel();
-		lblTips.setText("ÊäÈë²ÎÊırate");
+		lblTips.setText("è¾“å…¥å‚æ•°rate");
 		
 		btnSave = new JButton();
 		btnSave.setText("Save");
