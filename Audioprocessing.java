@@ -143,7 +143,7 @@ public class Cls12 {
 		for(int i = 0;i<data.length;i++){
 			float cur = data[i];
 			float res = cur*b[0];
-			//y += b[j]*qb[L-j], j=1,¡­L
+			//y += b[j]*qb[L-j], j=1,Â¡Â­L
 		/*	for(int j=1;j<b.length;j++){
 				res += qb.get(b.length-j-1)*b[j];
 				
@@ -151,7 +151,7 @@ public class Cls12 {
 			for(Integer k:hb.keySet()){
 				res += qb.get(b.length-k-1)*hb.get(k);
 			}
-			//y += a[j]*qa[N-j], j=1,¡­N
+			//y += a[j]*qa[N-j], j=1,Â¡Â­N
 			/*for(int j=1;j<a.length;j++){
 				res -= qa.get(a.length-j-1)*a[j];
 				
